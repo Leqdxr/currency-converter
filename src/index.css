@@ -1,1 +1,25 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-latte-base: #eff1f5;
+  --color-latte-mantle: #e6e9ef;
+  --color-latte-crust: #dce0e8;
+  --color-latte-surface0: #ccd0da;
+  --color-latte-surface1: #bcc0cc;
+  --color-latte-surface2: #acb0be;
+  --color-latte-overlay0: #9ca0b0;
+  --color-latte-subtext0: #6c6f85;
+  --color-latte-subtext1: #5c5f77;
+  --color-latte-text: #4c4f69;
+  --color-latte-blue: #1e66f5;
+  --color-latte-sapphire: #209fb5;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-latte-crust);
+  color: var(--color-latte-text);
+  margin: 0;
+}
